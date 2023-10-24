@@ -36,9 +36,6 @@ TEST(test_06, basic_test_set)
 //70 - 74 70
 //228 226 30
 
-
-
-
 int main(int argc, char **argv) {
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
