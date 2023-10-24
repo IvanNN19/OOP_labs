@@ -1,5 +1,0 @@
-/Users/ivanklimov/Desktop/OOP/build/CMakeFiles/LABA_2.dir
-/Users/ivanklimov/Desktop/OOP/build/CMakeFiles/tests01.dir
-/Users/ivanklimov/Desktop/OOP/build/CMakeFiles/test.dir
-/Users/ivanklimov/Desktop/OOP/build/CMakeFiles/edit_cache.dir
-/Users/ivanklimov/Desktop/OOP/build/CMakeFiles/rebuild_cache.dir
