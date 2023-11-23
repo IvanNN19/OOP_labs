@@ -129,12 +129,26 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+#=============================================================================
+# Target rules for targets named tests
+
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
 Array.o: Array.cpp.o
 .PHONY : Array.o
 
 # target to build an object file
 Array.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Array.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Array.cpp.o
 .PHONY : Array.cpp.o
 
 Array.i: Array.cpp.i
@@ -143,6 +157,7 @@ Array.i: Array.cpp.i
 # target to preprocess a source file
 Array.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Array.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Array.cpp.i
 .PHONY : Array.cpp.i
 
 Array.s: Array.cpp.s
@@ -151,6 +166,7 @@ Array.s: Array.cpp.s
 # target to generate assembly for a file
 Array.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Array.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Array.cpp.s
 .PHONY : Array.cpp.s
 
 Figure.o: Figure.cpp.o
@@ -159,6 +175,7 @@ Figure.o: Figure.cpp.o
 # target to build an object file
 Figure.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Figure.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Figure.cpp.o
 .PHONY : Figure.cpp.o
 
 Figure.i: Figure.cpp.i
@@ -167,6 +184,7 @@ Figure.i: Figure.cpp.i
 # target to preprocess a source file
 Figure.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Figure.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Figure.cpp.i
 .PHONY : Figure.cpp.i
 
 Figure.s: Figure.cpp.s
@@ -175,6 +193,7 @@ Figure.s: Figure.cpp.s
 # target to generate assembly for a file
 Figure.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Figure.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Figure.cpp.s
 .PHONY : Figure.cpp.s
 
 Rectangle.o: Rectangle.cpp.o
@@ -183,6 +202,7 @@ Rectangle.o: Rectangle.cpp.o
 # target to build an object file
 Rectangle.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Rectangle.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Rectangle.cpp.o
 .PHONY : Rectangle.cpp.o
 
 Rectangle.i: Rectangle.cpp.i
@@ -191,6 +211,7 @@ Rectangle.i: Rectangle.cpp.i
 # target to preprocess a source file
 Rectangle.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Rectangle.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Rectangle.cpp.i
 .PHONY : Rectangle.cpp.i
 
 Rectangle.s: Rectangle.cpp.s
@@ -199,7 +220,35 @@ Rectangle.s: Rectangle.cpp.s
 # target to generate assembly for a file
 Rectangle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Rectangle.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Rectangle.cpp.s
 .PHONY : Rectangle.cpp.s
+
+Rombus.o: Rombus.cpp.o
+.PHONY : Rombus.o
+
+# target to build an object file
+Rombus.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Rombus.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Rombus.cpp.o
+.PHONY : Rombus.cpp.o
+
+Rombus.i: Rombus.cpp.i
+.PHONY : Rombus.i
+
+# target to preprocess a source file
+Rombus.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Rombus.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Rombus.cpp.i
+.PHONY : Rombus.cpp.i
+
+Rombus.s: Rombus.cpp.s
+.PHONY : Rombus.s
+
+# target to generate assembly for a file
+Rombus.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Rombus.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Rombus.cpp.s
+.PHONY : Rombus.cpp.s
 
 Trapezoid.o: Trapezoid.cpp.o
 .PHONY : Trapezoid.o
@@ -207,6 +256,7 @@ Trapezoid.o: Trapezoid.cpp.o
 # target to build an object file
 Trapezoid.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Trapezoid.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Trapezoid.cpp.o
 .PHONY : Trapezoid.cpp.o
 
 Trapezoid.i: Trapezoid.cpp.i
@@ -215,6 +265,7 @@ Trapezoid.i: Trapezoid.cpp.i
 # target to preprocess a source file
 Trapezoid.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Trapezoid.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Trapezoid.cpp.i
 .PHONY : Trapezoid.cpp.i
 
 Trapezoid.s: Trapezoid.cpp.s
@@ -223,6 +274,7 @@ Trapezoid.s: Trapezoid.cpp.s
 # target to generate assembly for a file
 Trapezoid.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Trapezoid.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Trapezoid.cpp.s
 .PHONY : Trapezoid.cpp.s
 
 main.o: main.cpp.o
@@ -249,6 +301,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+tests.o: tests.cpp.o
+.PHONY : tests.o
+
+# target to build an object file
+tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests.cpp.o
+.PHONY : tests.cpp.o
+
+tests.i: tests.cpp.i
+.PHONY : tests.i
+
+# target to preprocess a source file
+tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests.cpp.i
+.PHONY : tests.cpp.i
+
+tests.s: tests.cpp.s
+.PHONY : tests.s
+
+# target to generate assembly for a file
+tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests.cpp.s
+.PHONY : tests.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -258,6 +334,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... tests"
 	@echo "... Array.o"
 	@echo "... Array.i"
 	@echo "... Array.s"
@@ -267,12 +344,18 @@ help:
 	@echo "... Rectangle.o"
 	@echo "... Rectangle.i"
 	@echo "... Rectangle.s"
+	@echo "... Rombus.o"
+	@echo "... Rombus.i"
+	@echo "... Rombus.s"
 	@echo "... Trapezoid.o"
 	@echo "... Trapezoid.i"
 	@echo "... Trapezoid.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... tests.o"
+	@echo "... tests.i"
+	@echo "... tests.s"
 .PHONY : help
 
 

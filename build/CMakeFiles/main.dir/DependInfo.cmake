@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/ivanklimov/Desktop/OOP/lab_3/Array.cpp" "CMakeFiles/main.dir/Array.cpp.o" "gcc" "CMakeFiles/main.dir/Array.cpp.o.d"
   "/Users/ivanklimov/Desktop/OOP/lab_3/Figure.cpp" "CMakeFiles/main.dir/Figure.cpp.o" "gcc" "CMakeFiles/main.dir/Figure.cpp.o.d"
   "/Users/ivanklimov/Desktop/OOP/lab_3/Rectangle.cpp" "CMakeFiles/main.dir/Rectangle.cpp.o" "gcc" "CMakeFiles/main.dir/Rectangle.cpp.o.d"
+  "/Users/ivanklimov/Desktop/OOP/lab_3/Rombus.cpp" "CMakeFiles/main.dir/Rombus.cpp.o" "gcc" "CMakeFiles/main.dir/Rombus.cpp.o.d"
   "/Users/ivanklimov/Desktop/OOP/lab_3/Trapezoid.cpp" "CMakeFiles/main.dir/Trapezoid.cpp.o" "gcc" "CMakeFiles/main.dir/Trapezoid.cpp.o.d"
   "/Users/ivanklimov/Desktop/OOP/lab_3/main.cpp" "CMakeFiles/main.dir/main.cpp.o" "gcc" "CMakeFiles/main.dir/main.cpp.o.d"
   )

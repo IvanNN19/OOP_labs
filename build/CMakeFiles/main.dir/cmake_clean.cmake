@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/Figure.cpp.o.d"
   "CMakeFiles/main.dir/Rectangle.cpp.o"
   "CMakeFiles/main.dir/Rectangle.cpp.o.d"
+  "CMakeFiles/main.dir/Rombus.cpp.o"
+  "CMakeFiles/main.dir/Rombus.cpp.o.d"
   "CMakeFiles/main.dir/Trapezoid.cpp.o"
   "CMakeFiles/main.dir/Trapezoid.cpp.o.d"
   "CMakeFiles/main.dir/main.cpp.o"

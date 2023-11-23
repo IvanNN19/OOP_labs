@@ -25,8 +25,50 @@
 },
 {
   "directory": "/Users/ivanklimov/Desktop/OOP/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -o CMakeFiles/main.dir/Rombus.cpp.o -c /Users/ivanklimov/Desktop/OOP/lab_3/Rombus.cpp",
+  "file": "/Users/ivanklimov/Desktop/OOP/lab_3/Rombus.cpp",
+  "output": "CMakeFiles/main.dir/Rombus.cpp.o"
+},
+{
+  "directory": "/Users/ivanklimov/Desktop/OOP/build",
   "command": "/usr/bin/clang++   -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -o CMakeFiles/main.dir/Array.cpp.o -c /Users/ivanklimov/Desktop/OOP/lab_3/Array.cpp",
   "file": "/Users/ivanklimov/Desktop/OOP/lab_3/Array.cpp",
   "output": "CMakeFiles/main.dir/Array.cpp.o"
+},
+{
+  "directory": "/Users/ivanklimov/Desktop/OOP/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -o CMakeFiles/tests.dir/tests.cpp.o -c /Users/ivanklimov/Desktop/OOP/lab_3/tests.cpp",
+  "file": "/Users/ivanklimov/Desktop/OOP/lab_3/tests.cpp",
+  "output": "CMakeFiles/tests.dir/tests.cpp.o"
+},
+{
+  "directory": "/Users/ivanklimov/Desktop/OOP/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -o CMakeFiles/tests.dir/Figure.cpp.o -c /Users/ivanklimov/Desktop/OOP/lab_3/Figure.cpp",
+  "file": "/Users/ivanklimov/Desktop/OOP/lab_3/Figure.cpp",
+  "output": "CMakeFiles/tests.dir/Figure.cpp.o"
+},
+{
+  "directory": "/Users/ivanklimov/Desktop/OOP/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -o CMakeFiles/tests.dir/Rombus.cpp.o -c /Users/ivanklimov/Desktop/OOP/lab_3/Rombus.cpp",
+  "file": "/Users/ivanklimov/Desktop/OOP/lab_3/Rombus.cpp",
+  "output": "CMakeFiles/tests.dir/Rombus.cpp.o"
+},
+{
+  "directory": "/Users/ivanklimov/Desktop/OOP/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -o CMakeFiles/tests.dir/Rectangle.cpp.o -c /Users/ivanklimov/Desktop/OOP/lab_3/Rectangle.cpp",
+  "file": "/Users/ivanklimov/Desktop/OOP/lab_3/Rectangle.cpp",
+  "output": "CMakeFiles/tests.dir/Rectangle.cpp.o"
+},
+{
+  "directory": "/Users/ivanklimov/Desktop/OOP/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -o CMakeFiles/tests.dir/Trapezoid.cpp.o -c /Users/ivanklimov/Desktop/OOP/lab_3/Trapezoid.cpp",
+  "file": "/Users/ivanklimov/Desktop/OOP/lab_3/Trapezoid.cpp",
+  "output": "CMakeFiles/tests.dir/Trapezoid.cpp.o"
+},
+{
+  "directory": "/Users/ivanklimov/Desktop/OOP/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -o CMakeFiles/tests.dir/Array.cpp.o -c /Users/ivanklimov/Desktop/OOP/lab_3/Array.cpp",
+  "file": "/Users/ivanklimov/Desktop/OOP/lab_3/Array.cpp",
+  "output": "CMakeFiles/tests.dir/Array.cpp.o"
 }
 ]

@@ -417,4 +417,5 @@ CMakeFiles/main.dir/main.cpp.o: \
   /Users/ivanklimov/Desktop/OOP/lab_3/Figure.h \
   /Users/ivanklimov/Desktop/OOP/lab_3/Rectangle.h \
   /Users/ivanklimov/Desktop/OOP/lab_3/Trapezoid.h \
+  /Users/ivanklimov/Desktop/OOP/lab_3/Rombus.h \
   /Users/ivanklimov/Desktop/OOP/lab_3/Array.h

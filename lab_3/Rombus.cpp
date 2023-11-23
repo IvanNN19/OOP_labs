@@ -4,40 +4,46 @@
 
 Rombus::Rombus(): Figure()
 {
-    a = 0;
+    d1 = 0;
+    d2 = 0;
 }
 
-Rombus::Rombus(double coord[8], double& a): Figure(coord)
+Rombus::Rombus(double coord[8], double& D1, double& D2): Figure(coord)
 {
-    this->a = a;
+    this->d1 = D1;
+    this->d2 = D2;
 }
 
 Rombus::Rombus(const Rombus& other): Figure(other)
 {
-    this->a = other.a;
+    this->d1 = other.d1;
+    this->d2 = other.d2;
 }
 
 Rombus::Rombus(Rombus&& other): Figure(std::move(other))
 {
-    this->a = other.a;
-    other.a = 0;
+    this->d1 = other.d1;
+    other.d1 = 0;
+    this->d2 = other.d2;
+    other.d2 = 0;
 }
 
 Rombus::~Rombus()
 {
-    a = 0;
+    d1 = 0;
+    d2 = 0;
 }
 
 ///////////////////////////////////////////////////
 Rombus::operator double()
 {   
-    area = a * b;
+     area = 0.5 * d1 * d2;
     return area;
 } 
 
 double Rombus:: get_area()
 {
-    area = a * b;
+    area = 0.5 * d1 * d2;
     return area;
 }
 
@@ -59,7 +65,8 @@ Rombus& Rombus::operator=(const Rombus& other)
         for (int q = 0; q < 8; q++){
             this->coord[q] = other.coord[q];
         }
-        this->a = other.a;
+        this->d1 = other.d1;
+        this->d2 = other.d2;
     }
     return *this;
 }
@@ -71,15 +78,17 @@ Rombus& Rombus::operator=(Rombus&& other)
             this->coord[q] = other.coord[q];
             other.coord[q] = 0;
         }
-        this->a = other.a;
-        other.a = 0;
+        this->d1 = other.d1;
+        other.d1 = 0;
+        this->d2 = other.d2;
+        other.d2 = 0;
     }
     return *this;
 }
 
 bool Rombus::operator==(const Rombus& other) const
 {
-    if (this->a != other.a){
+    if (this->d1 != other.d1 | this->d2 != other.d2){
         return false;
     }
     return true;

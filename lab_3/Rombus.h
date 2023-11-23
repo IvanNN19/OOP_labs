@@ -11,7 +11,7 @@ class Rombus: public Figure
 public:
 
     Rombus();
-    Rombus(double coord[8], double& a);
+    Rombus(double coord[8], double& d1, double& d2);
     Rombus(const Rombus& other);
     Rombus(Rombus&& other);
     ~Rombus();
@@ -26,9 +26,8 @@ public:
     bool operator==(const Rombus& other) const;
 
 protected:
-
-    double a;
-
+    double d1;
+    double d2;
 };
 
 inline std::istream& operator>>(std::istream& is, Rombus& romb){
@@ -40,8 +39,10 @@ inline std::istream& operator>>(std::istream& is, Rombus& romb){
         is >> coord[q];
         romb.coord[q] = coord[q];
     }
-    std::cout << "Введите длину стороны: " << "\n";
-    is >> romb.a;
+    std::cout << "Введите длину 1 диагонали: " << "\n";
+    is >> romb.d1;
+    std::cout << "Введите длину 2 диагонали: " << "\n";
+    is >> romb.d2;
     std::cout << "Ввод закончен." << "\n";
 
     return is;
@@ -54,7 +55,7 @@ inline std::ostream& operator<<(std::ostream& os, const Rombus& romb){
     os << "B: x = " << romb.coord[2] << "; y = " << romb.coord[3] << "\n";
     os << "C: x = " << romb.coord[4] << "; y = " << romb.coord[5] << "\n";
     os << "D: x = " << romb.coord[6] << "; y = " << romb.coord[7] << "\n";
-    os << "Длина стороны ромба: " << romb.a << "\n";
+    os << "Длины диагоналей ромба: " << romb.d1 << " " << romb.d2 << "\n";
 
     return os;
 }
