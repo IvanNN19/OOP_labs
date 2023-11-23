@@ -1,5 +1,5 @@
 {
-    "cmake.sourceDirectory": "/Users/ivanklimov/Desktop/OOP",
+    "cmake.sourceDirectory": "/Users/ivanklimov/Desktop/OOP/lab_3",
     "files.associations": {
         "*.pl": "prolog",
         "ratio": "cpp",
@@ -77,6 +77,8 @@
         "algorithm": "cpp",
         "functional": "cpp",
         "iterator": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "forward_list": "cpp",
+        "span": "cpp"
     }
 }

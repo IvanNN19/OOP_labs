@@ -1,0 +1,3 @@
+/Users/ivanklimov/Desktop/OOP/build/CMakeFiles/main.dir
+/Users/ivanklimov/Desktop/OOP/build/CMakeFiles/edit_cache.dir
+/Users/ivanklimov/Desktop/OOP/build/CMakeFiles/rebuild_cache.dir
