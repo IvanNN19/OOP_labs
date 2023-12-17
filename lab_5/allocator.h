@@ -22,31 +22,19 @@ template < class T, size_t N >
     using size_type = std::size_t;
 
     Allocator() {
-      _used_blocks = (char * ) malloc(sizeof(T) * max_count);
+      _used_blocks = (char*) malloc(sizeof(T) * max_count);
       _free_blocks = list < void * > ();
       for (uint64_t i = 0; i < max_count; i++) {
         _free_blocks.push_front(_used_blocks + i * sizeof(T));
       }
       _free_count = max_count;
-      // #ifdef DEBUG
-      //   std::cout << "allocator: memory init" << std::endl;
-      // #endif
     }
 
     ~Allocator() {
-      //#ifdef DEBUG
-      // if (_free_count < max_count)
-      //   std::cout << "allocator: Memory leak?" << std::endl;
-      // else
-      //   std::cout << "allocator: Memory freed" << std::endl;
-      //#endif
-
-      ((list < void * > ) _free_blocks).clear();
-
+      ((list<void*>) _free_blocks).clear();
       if (_used_blocks != NULL && _used_blocks[0] == '\0') {
         delete _used_blocks;
       }
-
       _used_blocks = nullptr;
     }
 
@@ -59,10 +47,7 @@ template < class T, size_t N >
       T* result = nullptr;
       if (_free_count > 0) {
         auto it2 = std::next(_free_blocks.begin(), --_free_count);
-        result = (T * )( * it2);
-        // #ifdef DEBUG
-        //     std::cout << "allocator: Allocate " << (max_count - _free_count) << " of " << max_count << " Address:" << result << std::endl;
-        // #endif
+        result = (T*)( *it2);
       } else {
         std::cout << "allocator: No memory exception :-)" << std::endl;
       }
@@ -70,13 +55,11 @@ template < class T, size_t N >
     }
 
     void deallocate(T * pointer, size_t) {
-      // #ifdef DEBUG
-      //   std::cout << "allocator: Deallocate block " << pointer << std::endl;
-      // #endif
       auto it2 = std::next(_free_blocks.begin(), _free_count);
       ++_free_count;
       * it2 = pointer;
     }
+
     template < typename U,
     typename...Args >
     void construct(U * p, Args && ...args) {
@@ -99,75 +82,3 @@ template < typename T, typename U, size_t BLOCK_COUNT >
     const Allocator < U, BLOCK_COUNT > & rhs) {
     return false;
   }
-
-
-// #include <list>
-// #include <iostream>
-
-// namespace mai
-// {
-//     template <class T, int BLOCK_SIZE = 100>
-//     class Allocator{
-//     private:
-//         std::list<T> memory;
-//         typename std::list<T>::iterator currentPosition;
-
-//     public:
-//         using value_type = T;
-//         using pointer = T *;
-//         using const_pointer = const T *;
-
-//         Allocator(){
-//             memory.resize(BLOCK_SIZE);
-//             currentPosition = memory.begin();
-//         }
-
-//         ~Allocator(){
-//             while (!memory.empty()){
-//                 memory.pop_back();
-//             }
-//         }
-
-//         template <class U>
-//         struct rebind
-//         {
-//             using other = Allocator<U,BLOCK_SIZE>;
-//         };
-
-//         T *allocate(int n){
-//             if (std::distance(currentPosition, memory.end()) >= n){
-//                 T* ptr = &(*currentPosition);
-//                 std::advance(currentPosition, n);//Увеличивает итератор на указанное количество позиций.
-//                 return ptr;
-//             }
-//             return nullptr;
-//         }
-
-//         void deallocate(T *pointer, int){};
-
-//         template <typename U, typename... Args>
-//         void construct(U *p, Args &&...args){
-//             new (p) U(std::forward<Args>(args)...);
-//         }
-
-//         int get_size(){
-//             return BLOCK_SIZE;
-//         }
-
-//         void destroy(pointer p){
-//             p->~T();
-//         }
-//     };
-
-//     template <class T, class U>
-//     constexpr bool operator==(const Allocator<T> &lhs, const Allocator<U> &rhs) 
-//     {
-//         return true;
-//     }
-
-//     template <typename T, typename U>
-//     constexpr bool operator!=(const Allocator<T> &lhs, const Allocator<U> &rhs)  
-//     {
-//         return false;
-//     }
-// }

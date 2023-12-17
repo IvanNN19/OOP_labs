@@ -39,7 +39,6 @@ public:
             capacity_*=2;
         }
         reserve(capacity_ * 2 + 1);
-
         size_t i=0;
         for(const T &c:a){
             allocator_.construct(data_ + i, c);
