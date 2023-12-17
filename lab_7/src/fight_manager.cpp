@@ -13,7 +13,6 @@ void FightManager::add_event(FightEvent &&event) {
 void FightManager::operator()() {
     while (true) {
         std::optional<FightEvent> event;
-
         {
             std::lock_guard<std::shared_mutex> lock(mtx);
             if (!events.empty()) {

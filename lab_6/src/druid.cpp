@@ -7,7 +7,7 @@ Druid::Druid(int x, int y) : NPC(DruidType, x, y) {}
 bool Druid::accept(const std::shared_ptr<NPC> &attacker) {
     if (isDeath)
         return false;
-    
+
     bool success = attacker->fight(*this);
     if (success)
         death();

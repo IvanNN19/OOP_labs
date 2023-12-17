@@ -11,3 +11,4 @@ add_executable(main main.cpp)
 add_executable(tests tests.cpp)  
 
 target_link_libraries(tests PRIVATE GTest::gtest_main)
+

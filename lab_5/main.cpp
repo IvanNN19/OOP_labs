@@ -1,4 +1,3 @@
-//#include <iostream>
 #include "allocator.h"
 #include "vector.h"
 #include <vector>

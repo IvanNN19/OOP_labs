@@ -8,33 +8,22 @@
 #include "fight_manager.h"
 #include "print.h"
 #include <signal.h>
-
 #include <algorithm>
 #include <sstream>
 #include <future>
-
 #include <sys/wait.h>
 #include <unistd.h>
 #include <stdio.h>
 #include <string.h>
 
 using namespace std;
-std::mutex print_mutex;
+mutex print_mutex;
 
 // print to screen
 ostream &operator<<(ostream &os, const vector_NPC &array) {
     for (auto ptr : array)
         ptr->print();
     return os;
-}
-
-int create_process() {
-    pid_t pid = fork();
-    if (-1 == pid) {
-        perror("fork");
-        exit(-1);
-    }
-    return pid;
 }
 
 int main() {
@@ -83,23 +72,6 @@ int main() {
 
     auto begin = std::chrono::high_resolution_clock::now();
 
-
-
-    // Начинается пиздец
-
-    // int pipe_fd[2];
-    // pipe(pipe_fd);
-
-    // pid_t process_id = create_process();
-    // if (process_id == 0) {
-    //     close(pipe_fd[1]);
-    //     dup2(pipe_fd[0], 0);
-    //     execl("main.py", "", NULL);
-    //     perror("exec");
-    //     exit(-1);
-    // }
-    // close(pipe_fd[0]);
-
     char bufer[2 + MOBS * 10];
     bufer[0] = '1';
     bufer[1] = '\n';
@@ -119,14 +91,12 @@ int main() {
         }
         bufer[cur_pos] = 0;
 
-        //write(pipe_fd[1], bufer, sizeof(char) * strlen(bufer));
-
         print(&print_mutex) << "Я главный процесс, отправил новую партию на отрисовку" << endl;
 
         auto end = std::chrono::high_resolution_clock::now();
         auto seconds = std::chrono::duration_cast <std::chrono::seconds>( end - begin ).count();
 
-        if (seconds >= 30) {
+        if (seconds >= 10) {
             print(&print_mutex) << "Останавливаю поток движения" << endl;
             move_thread.detach();
 

@@ -5,7 +5,6 @@
 #include <utility>
 
 using namespace std;
-// #define DEBUG
 
 template < class T, size_t N >
   class Allocator {

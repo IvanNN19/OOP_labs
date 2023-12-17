@@ -1,116 +1,144 @@
 Murder --------
-outlaw {x:19, y:10}
+druid {x:19, y:10}
 elf {x:19, y:15}
 
 Murder --------
 elf {x:9, y:26}
-knight {x:8, y:67}
-
-Murder --------
-knight {x:80, y:1}
-outlaw {x:71, y:4}
-
-Murder --------
-knight {x:13, y:43}
-outlaw {x:5, y:49}
-
-Murder --------
-elf {x:85, y:75}
-knight {x:58, y:93}
-
-Murder --------
-elf {x:10, y:20}
 knight {x:38, y:15}
 
 Murder --------
-knight {x:22, y:17}
-outlaw {x:19, y:10}
+elf {x:54, y:65}
+knight {x:58, y:93}
 
 Murder --------
-outlaw {x:55, y:22}
-elf {x:46, y:21}
+elf {x:10, y:74}
+knight {x:8, y:67}
+
+Murder --------
+knight {x:13, y:43}
+druid {x:5, y:49}
+
+Murder --------
+elf {x:75, y:35}
+knight {x:47, y:70}
+
+Murder --------
+elf {x:10, y:20}
+knight {x:36, y:38}
+
+Murder --------
+knight {x:22, y:17}
+druid {x:19, y:10}
+
+Murder --------
+knight {x:6, y:76}
+druid {x:10, y:77}
 
 Murder --------
 elf {x:30, y:1}
-knight {x:80, y:1}
+knight {x:13, y:43}
 
 Murder --------
 elf {x:5, y:14}
 knight {x:1, y:14}
 
 Murder --------
-outlaw {x:74, y:44}
-elf {x:75, y:35}
+knight {x:42, y:91}
+druid {x:39, y:95}
 
 Murder --------
-elf {x:21, y:60}
-knight {x:3, y:33}
-
-Murder --------
-elf {x:11, y:15}
-knight {x:36, y:38}
+elf {x:46, y:21}
+knight {x:80, y:1}
 
 Murder --------
 knight {x:91, y:54}
-outlaw {x:99, y:48}
+druid {x:99, y:48}
 
 Murder --------
 elf {x:59, y:48}
 knight {x:94, y:83}
 
 Murder --------
-outlaw {x:37, y:98}
-elf {x:29, y:99}
+elf {x:54, y:62}
+knight {x:46, y:84}
 
 Murder --------
-elf {x:81, y:73}
-knight {x:96, y:52}
-
-Murder --------
-elf {x:6, y:23}
-knight {x:23, y:35}
-
-Murder --------
-outlaw {x:14, y:78}
+druid {x:2, y:67}
 elf {x:9, y:73}
 
 Murder --------
-outlaw {x:49, y:63}
-elf {x:54, y:62}
+knight {x:50, y:6}
+druid {x:50, y:0}
 
 Murder --------
-elf {x:29, y:96}
-knight {x:43, y:78}
+elf {x:94, y:33}
+knight {x:96, y:52}
 
 Murder --------
-knight {x:59, y:84}
-outlaw {x:54, y:86}
+elf {x:81, y:72}
+knight {x:83, y:74}
 
 Murder --------
-elf {x:15, y:58}
-knight {x:51, y:77}
+druid {x:48, y:66}
+elf {x:51, y:59}
 
 Murder --------
-knight {x:52, y:0}
-outlaw {x:44, y:3}
+elf {x:23, y:58}
+knight {x:26, y:96}
 
 Murder --------
-outlaw {x:10, y:77}
-elf {x:14, y:79}
+elf {x:14, y:14}
+knight {x:18, y:38}
 
 Murder --------
-outlaw {x:64, y:53}
-elf {x:63, y:44}
+elf {x:32, y:87}
+knight {x:53, y:94}
 
 Murder --------
-elf {x:27, y:95}
-knight {x:53, y:99}
+druid {x:48, y:18}
+elf {x:43, y:13}
 
 Murder --------
-elf {x:21, y:59}
-knight {x:66, y:80}
+druid {x:81, y:26}
+elf {x:90, y:22}
 
 Murder --------
-elf {x:10, y:12}
-knight {x:21, y:4}
+druid {x:81, y:29}
+elf {x:76, y:36}
+
+Murder --------
+druid {x:22, y:46}
+elf {x:23, y:55}
+
+Murder --------
+druid {x:79, y:28}
+elf {x:86, y:26}
+
+Murder --------
+druid {x:21, y:48}
+elf {x:28, y:53}
+
+Murder --------
+druid {x:5, y:22}
+elf {x:10, y:19}
+
+Murder --------
+druid {x:72, y:66}
+elf {x:72, y:75}
+
+Murder --------
+druid {x:33, y:80}
+elf {x:26, y:78}
+
+Murder --------
+druid {x:42, y:37}
+elf {x:46, y:40}
+
+Murder --------
+druid {x:25, y:69}
+elf {x:28, y:76}
+
+Murder --------
+druid {x:98, y:27}
+elf {x:96, y:21}
 

@@ -1,3 +1,9 @@
 {
-    "cmake.sourceDirectory": "/Users/ivanklimov/Desktop/OOP_labs/lab_6"
+    "cmake.sourceDirectory": "/Users/ivanklimov/Desktop/OOP_lab/lab_5",
+    "files.associations": {
+        "*.pl": "prolog",
+        "__mutex_base": "cpp",
+        "mutex": "cpp",
+        "memory": "cpp"
+    }
 }

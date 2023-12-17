@@ -4,7 +4,7 @@
 
 class Outlaw : public NPC {
 private:
-    const static inline std::string name = "outlaw";
+    const static inline std::string name = "druid";
     const static inline int distance_move = 10;
     const static inline int distance_fight = 10;
 

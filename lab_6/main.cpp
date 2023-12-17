@@ -20,10 +20,9 @@ vector_NPC fight(const vector_NPC &array, size_t distance) {
 
     for (const auto &attacker : array)
         for (const auto &defender : array)
-            if ((attacker != defender) && (attacker->is_close(defender, distance))) {\
+            if ((attacker != defender) && (attacker->is_close(defender, distance))) {
                 // std::cout << "Есть доступность для дистанции " << distance << std::endl;
                 bool success = defender->accept(attacker);
-
                 if (success) {
                     dead_list.push_back(defender);
                     std::cout << "Есть убийство - защитник и аткаующий:" << std::endl;
