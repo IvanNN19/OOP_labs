@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_compile_options(-g -rdynamic)
 
-add_subdirectory(/Users/ivanklimov/Desktop/OOP_labs/lab_6/googletest)
+#add_subdirectory(lib/googletest)
 
 set(INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
@@ -26,8 +26,8 @@ add_executable(${CMAKE_PROJECT_NAME}_exe main.cpp)
 
 target_link_libraries(${CMAKE_PROJECT_NAME}_exe PRIVATE ${CMAKE_PROJECT_NAME}_lib)
 
-add_executable(${CMAKE_PROJECT_NAME}_test ${TEST_SOURCES})
+#add_executable(${CMAKE_PROJECT_NAME}_test ${TEST_SOURCES})
 
-target_include_directories(${CMAKE_PROJECT_NAME}_test PRIVATE ${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
+#target_include_directories(${CMAKE_PROJECT_NAME}_test PRIVATE ${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
-target_link_libraries(${CMAKE_PROJECT_NAME}_test PRIVATE ${CMAKE_PROJECT_NAME}_lib gtest gtest_main)
+#target_link_libraries(${CMAKE_PROJECT_NAME}_test PRIVATE ${CMAKE_PROJECT_NAME}_lib gtest gtest_main)
